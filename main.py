@@ -2,8 +2,8 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 import allteamwinloss, pointdifferential, StatOverTime
-
-TOKEN = 'MTMwODk4OTA2NTc2ODQ2ODY2NA.G1aRGQ.6_o586ECL-DkNMAKWJSzIMbEyHLqiuYeKOUCvw'
+f = open("token.txt", "r")
+TOKEN = f.read()
 client = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 
